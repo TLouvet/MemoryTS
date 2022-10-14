@@ -5,6 +5,8 @@
 Cloner le projet, se déplacer dans le nouveau dossier et lancer la commande npm install.
 Lancer le projet via le fichier index.html
 
+Lors des modifications du projet, lancer la commande "npm build" pour reconstruire le projet
+
 # Cahier des charges
 
 Le site doit permettre à une personne de lancer une nouvelle partie du jeu mémory, un compteur de point indiquera le nombre de fois où le joueur s'est trompé.
