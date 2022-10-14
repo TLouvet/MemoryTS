@@ -1,10 +1,9 @@
+# Memory TS
+
 # Installer le projet
 
-1- installer sass sur sa machine
-npm i -g sass
-
-2- lancer sass
-npm run sass
+Cloner le projet, se déplacer dans le nouveau dossier et lancer la commande npm install.
+Lancer le projet via le fichier index.html
 
 # Cahier des charges
 
