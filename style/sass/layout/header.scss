@@ -1,0 +1,11 @@
+.header {
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+
+  &__logo {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+  }
+}

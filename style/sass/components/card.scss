@@ -1,0 +1,49 @@
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  padding: 50px;
+  column-gap: 30px;
+  row-gap: 50px;
+  justify-content: space-around;
+
+  @include tablet-res {
+    grid-template-columns: repeat(4, 125px);
+    padding: 30px;
+    column-gap: 20px;
+  }
+
+  @include mobile-res {
+    grid-template-columns: repeat(3, 60px);
+    padding: 30px 15px;
+    column-gap: 15px;
+  }
+}
+
+.card {
+  padding: 50px 20px;
+  background-color: black;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten(black, 15%);
+    background-color: lighten(black, 15%);
+  }
+
+  @include mobile-res {
+    padding: 20px;
+  }
+
+  &.unfold {
+    background-color: #b8e7ba;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px #727272;
+  }
+
+  &.invisible {
+    background-color: transparent;
+    color: transparent;
+    cursor: default;
+  }
+}

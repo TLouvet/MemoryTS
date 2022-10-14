@@ -1,0 +1,3 @@
+sass ./style/sass/main.scss ./style/style.css
+npx tsc --build
+npx browserify ./dist/index.js -o bundle.js

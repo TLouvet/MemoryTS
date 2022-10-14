@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <title>Memory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css" />
+  <script src="./bundle.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <p class="header__logo">MEMORY</p>
+  </header>
+  <main>
+    <h1 class="text-centered">Bienvenue dans le jeu du Memory !</h1>
+    <p class="howto">Comment jouer:</p>
+    <p>Sélectionnez un nombre de cartes et appuyez sur le bouton pour commencer la partie. Cliquez sur une carte pour
+      afficher sa valeur puis sur une autre carte.
+      Si les deux valeurs sont les mêmes, alors ces cartes sont retirées du jeu. Si les deux valeurs sont différentes,
+      les
+      cartes redeviennent invisibles et le compteur d'erreurs est incrémenté.
+      Ce compteur d'erreur consitute votre score final, donc plus il est proche de 0, mieux c'est !
+      Le jeu se termine lorsque toutes les paires de cartes ont été trouvées.
+    </p>
+    <div>
+      <label for="cards-selector">Nombre de cartes:</label>
+      <select class="select" id="cards-selector"></select>
+    </div>
+    <button class="btn" id="btn-start" type="button" aria-label="Commencer la partie">Cliquer ici pour démarrer une
+      partie</button>
+    <section id="cards" class="cards-grid">
+
+
+    </section>
+    <p id="status">Aucune partie en cours</p>
+
+  </main>
+  <footer class="footer">
+    <p>Memory game - 2022 - Thomas Louvet</p>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog">
+    <div class="modal__card">
+      <p>Bravo, vous avez gagné ! Votre score est de: <span id="score"></span> points </p>
+      <div class="btn-container">
+        <button type="button" class="btn" id="close-modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
