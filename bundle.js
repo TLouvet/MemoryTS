@@ -142,6 +142,7 @@ function bootstrap() {
         startBtn.addEventListener('click', function () {
             (0, cards_1.generateCards)();
             const status = document.getElementById('status');
+            (0, store_1.updateStoreProperty)('score', '0');
             if (status) {
                 status.innerText = "Partie en cours";
             }
@@ -186,6 +187,7 @@ const store_1 = require("./store");
  * Called when game is won by the player
  */
 function openModal() {
+    var _a;
     const modal = document.getElementById('modal');
     if (modal) {
         modal.style.display = "flex";
@@ -194,10 +196,7 @@ function openModal() {
         if (scoreSpan && score) {
             scoreSpan.innerText = score;
         }
-        const closeBtn = document.getElementById('close-modal');
-        if (closeBtn) {
-            closeBtn.addEventListener('click', closeModal);
-        }
+        (_a = document.getElementById('close-modal')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', closeModal);
     }
 }
 exports.openModal = openModal;

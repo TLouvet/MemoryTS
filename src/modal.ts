@@ -13,10 +13,8 @@ export function openModal() {
       scoreSpan.innerText = score;
     }
 
-    const closeBtn = document.getElementById('close-modal');
-    if (closeBtn) {
-      closeBtn.addEventListener('click', closeModal);
-    }
+    document.getElementById('close-modal')
+      ?.addEventListener('click', closeModal);
   }
 }
 

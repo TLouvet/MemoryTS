@@ -24,6 +24,7 @@ function bootstrap() {
         startBtn.addEventListener('click', function () {
             (0, cards_1.generateCards)();
             const status = document.getElementById('status');
+            (0, store_1.updateStoreProperty)('score', '0');
             if (status) {
                 status.innerText = "Partie en cours";
             }

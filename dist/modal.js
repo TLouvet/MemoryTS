@@ -6,6 +6,7 @@ const store_1 = require("./store");
  * Called when game is won by the player
  */
 function openModal() {
+    var _a;
     const modal = document.getElementById('modal');
     if (modal) {
         modal.style.display = "flex";
@@ -14,10 +15,7 @@ function openModal() {
         if (scoreSpan && score) {
             scoreSpan.innerText = score;
         }
-        const closeBtn = document.getElementById('close-modal');
-        if (closeBtn) {
-            closeBtn.addEventListener('click', closeModal);
-        }
+        (_a = document.getElementById('close-modal')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', closeModal);
     }
 }
 exports.openModal = openModal;

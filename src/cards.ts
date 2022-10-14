@@ -39,7 +39,6 @@ function createCard(value: number, id: string) {
   return card;
 }
 
-
 function handleCardClick(e: MouseEvent) {
   const currentCounter = +(getStoreProperty('currentShownCards') || 0);
   const canPlayerClick = getStoreProperty('canClick') === "true" ? true : false;
@@ -56,4 +55,3 @@ function handleCardClick(e: MouseEvent) {
     verifyCurrentCounter();
   }
 }
-
