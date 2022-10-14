@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "./.build",
-    "sass:build": "sass ./style/sass/main.scss ./style/style.css",
-    "sass": "sass ./assets/scss/index.scss --watch ./assets/css/index.css"
+    "sass:build": "sass ./style/sass/main.scss ./style/style.css"
   },
   "author": "",
   "license": "ISC",
